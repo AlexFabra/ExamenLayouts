@@ -1,21 +1,404 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Alejandro"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:background="@color/colorBlue" />
+        android:id="@+id/centroReloj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textHora"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/hora12"
+        android:text="12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="0"/>
+
+
+    <TextView
+        android:id="@+id/hora12punt"
+        android:text="a"
+        android:textColor="@color/colorRed"
+        android:layout_margin="20dp"
+        android:background="@color/colorRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="10sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="0"/>
+
+    <TextView
+        android:id="@+id/hora1"
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="30"/>
+
+    <TextView
+        android:id="@+id/hora1punt"
+        android:text="aa"
+        android:textColor="@color/colorNavy"
+        android:background="@color/colorNavy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="4sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="30"/>
+
+    <TextView
+        android:id="@+id/hora2"
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="60"/>
+
+    <TextView
+        android:id="@+id/hora2punt"
+        android:text="aa"
+        android:textColor="@color/colorNavy"
+        android:background="@color/colorNavy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="4sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="60"/>
+
+    <TextView
+        android:id="@+id/hora3"
+        android:text="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="90"/>
+
+    <TextView
+        android:id="@+id/hora3punt"
+        android:text="aaaa"
+        android:textColor="@color/colorRed"
+        android:background="@color/colorRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="4sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="90"/>
+
+    <TextView
+        android:id="@+id/hora4"
+        android:text="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="120"/>
+
+    <TextView
+        android:id="@+id/hora4punt"
+        android:text="aa"
+        android:textColor="@color/colorNavy"
+        android:background="@color/colorNavy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="4sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="120"/>
+
+    <TextView
+        android:id="@+id/hora5"
+        android:text="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="150"/>
+
+    <TextView
+        android:id="@+id/hora5punt"
+        android:text="aa"
+        android:textColor="@color/colorNavy"
+        android:background="@color/colorNavy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="4sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="150"/>
+
+    <TextView
+        android:id="@+id/hora6punt"
+        android:text="a"
+        android:textColor="@color/colorRed"
+        android:layout_margin="20dp"
+        android:background="@color/colorRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="10sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="180"/>
+
+    <TextView
+        android:id="@+id/hora6"
+        android:text="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="180"/>
+
+    <TextView
+        android:id="@+id/elMeuNom"
+        android:text="Alejandro Fabra"
+        android:textColor="@color/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="140dp"
+        app:layout_constraintCircleAngle="180"/>
+
+    <TextView
+        android:id="@+id/hora7"
+        android:text="7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="210"/>
+
+    <TextView
+        android:id="@+id/hora7punt"
+        android:text="aa"
+        android:textColor="@color/colorNavy"
+        android:background="@color/colorNavy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="4sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="210"/>
+
+    <TextView
+        android:id="@+id/hora8"
+        android:text="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="240"/>
+
+    <TextView
+        android:id="@+id/hora8punto"
+        android:text="aa"
+        android:textColor="@color/colorNavy"
+        android:background="@color/colorNavy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="4sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="240"/>
+
+    <TextView
+        android:id="@+id/hora9"
+        android:text="9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="270"/>
+
+    <TextView
+        android:id="@+id/hora9punt"
+        android:text="aaaa"
+        android:textColor="@color/colorRed"
+        android:background="@color/colorRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="4sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="270"/>
+
+
+    <TextView
+        android:id="@+id/hora10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleAngle="300"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/hora10punt"
+        android:text="aa"
+        android:textColor="@color/colorNavy"
+        android:background="@color/colorNavy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="4sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleAngle="300"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/hora11"
+        android:text="11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintCircleAngle="330"/>
+
+    <TextView
+        android:id="@+id/hora11punt"
+        android:text="aa"
+        android:background="@color/colorNavy"
+        android:textColor="@color/colorNavy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="4sp"
+        app:layout_constraintCircle="@id/centroReloj"
+        app:layout_constraintCircleRadius="80dp"
+        app:layout_constraintCircleAngle="330"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 

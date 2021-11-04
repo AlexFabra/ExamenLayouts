@@ -4,35 +4,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background"
+    android:background="@color/colorBlue"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/contenedor1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Alejandro"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:background="@color/colorRed" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Alejandro"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:background="@color/colorGreen" />
+        android:background="@color/colorRed"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        >
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"
+            android:background="@color/colorBlack" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"
+            android:background="@color/colorWhite" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"
+            android:background="@color/colorBlack" />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"
+            android:background="@color/colorWhite" />
+    </LinearLayout>
 
     <TextView
+        android:id="@+id/tv5white"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Alejandro"
+        android:text="WHITE"
         android:textSize="30sp"
         android:gravity="center"
-        android:background="@color/colorBlue" />
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorWhite" />
 
+    <TextView
+        android:id="@+id/tv6black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="BLACK"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/contenedor2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorRed"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        >
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"
+            android:background="@color/colorWhite" />
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ALEJANDRO"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBlack" />
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"
+            android:background="@color/colorWhite" />
+
+    </LinearLayout>
 </LinearLayout>
 

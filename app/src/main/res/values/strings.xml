@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ExamenLayouts</string>
+    <string name="textHora">És hora de ser feliç</string>
+    <string name="textHour">Be happy now</string>
 </resources>
